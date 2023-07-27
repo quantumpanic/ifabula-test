@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Ionic Test IFabula
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>Daftar fitur</strong>
+    <p>
+      <a [routerLink]="'/change-name'">Tampilkan label dari Json</a>
+    </p>
+    <p>
+      <a [routerLink]="'/http-req'">HTTP request</a>
+    </p>
+    <p>
+      <a [routerLink]="'/hash-function'">Hash-256</a>
+    </p>
+    <p>
+      <a [routerLink]="'/login-page'">Login Page</a>
+    </p>
+    <p>
+      <a (click)="GET_Request()">GET Request</a>
+    </p>
+    <p>
+      <a (click)="POST_Request()">POST Request</a>
+    </p>
+    <p>
+      <a (click)="GET_Request_Invalid()">GET Request (invalid header)</a>
+    </p>
+  </div>
+</ion-content>

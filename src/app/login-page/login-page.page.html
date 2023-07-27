@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Login Page
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Show this section when the user is not logged in -->
+  <ion-item *ngIf="!isLoggedIn">
+    <ion-label>Username</ion-label>
+    <ion-input type="text" [(ngModel)]="username"></ion-input>
+  </ion-item>
+
+  <ion-item *ngIf="!isLoggedIn">
+    <ion-label>Password</ion-label>
+    <ion-input type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+
+  <ion-button *ngIf="!isLoggedIn" (click)="login()">Login</ion-button>
+
+  <!-- Show this section when the user is logged in -->
+  <ion-item *ngIf="isLoggedIn">
+    <ion-label>Welcome, {{ username }}!</ion-label>
+  </ion-item>
+
+  <ion-button *ngIf="isLoggedIn" (click)="logout()">Logout</ion-button>
+
+</ion-content>

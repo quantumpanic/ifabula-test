@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tampilkan data dari Json
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h1>Person Information</h1>
+  <div>
+    <label for="person-info">Name: </label>
+    <span id="person-info">{{ personName }}</span>
+  </div>
+  <ion-button expand="full" (click)="changePerson()">Change Person</ion-button>
+</ion-content>

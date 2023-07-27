@@ -1,0 +1,7 @@
+{
+  "name": "ifabula-test",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
